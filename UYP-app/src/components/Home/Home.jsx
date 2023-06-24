@@ -4,7 +4,7 @@ function Home() {
   return (
     <div className={styles.contenedor}>
       <div className={styles.Uyp}>        
-        <h1>Unidad y progreso</h1>
+        <h1>Unidad y Progreso</h1>
         <img className={styles.img} src="https://imagenes.elpais.com/resizer/v1ikOMkmgqn7IdlxC5eIbkd0V98=/414x0/arc-anglerfish-eu-central-1-prod-prisa.s3.amazonaws.com/public/PC23542FFFFVIVZPAO7OQ26INA.jpg" alt="" />
       </div>
     <br />
