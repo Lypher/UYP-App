@@ -1,0 +1,25 @@
+.navbar {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0; 
+    width: 100%; 
+    justify-content: space-between; 
+    align-items: center; 
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+  }
+  
+  .logo {
+    padding: 20px;
+    border-right:1px solid black;
+
+  }
+  
+  .boton {
+    padding: 20px;
+ border-left:1px solid black;
+ 
+  }
+  

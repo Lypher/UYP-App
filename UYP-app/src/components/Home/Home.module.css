@@ -1,0 +1,71 @@
+.contenedor{
+
+}
+
+.img{
+    border-radius: 100px;
+}
+
+.Uyp{
+display: flex;
+margin: auto ;
+margin-top: 50px;
+width: 100%; 
+justify-content:space-around; 
+align-items: center; 
+padding: 10px;
+}  
+
+.queEs{
+display: flex;
+margin: auto    ;
+width: 100%; 
+justify-content: space-around; 
+align-items: center; 
+padding: 10px;    
+}
+
+.texto{
+padding-left: 50px;
+padding-right: 50px;
+}
+
+.texto1{
+font-size:x-large;
+color: cornflowerblue;
+}
+
+.jovenes{
+    display: flex;  
+    left: 0; 
+        margin-top: 50px;
+    width: 100%; 
+    justify-content:space-around; 
+    align-items: center; 
+    padding: 10px;
+
+}
+.jovenesImg{
+    width: 150%;
+    border-radius: 100px;
+}
+
+.textodivision1{
+    display: grid;
+    padding: 10px;
+}
+
+.textodivision2{
+    display: flex;  
+    left: 0; 
+    margin-top: 50px;
+    width: 100%; 
+    justify-content:space-around; 
+    align-items: center; 
+    padding: 10px;
+
+}
+
+.colortexto{
+    color: cornflowerblue;
+}
