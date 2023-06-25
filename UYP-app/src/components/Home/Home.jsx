@@ -26,11 +26,11 @@ function Home() {
       <div className={styles.textodivision1}>
         <div className={styles.textodivision2}> 
           <div>
-          <h1 className={styles.colortexto}>50</h1>
+          <h1 className={styles.colortexto}>50+</h1>
           <h4>empleados activos</h4>
           </div>
           <div>
-          <h1 className={styles.colortexto}>10</h1>
+          <h1 className={styles.colortexto}>10+</h1>
           <h4>años de experiencia</h4>
           </div>
         
@@ -40,8 +40,52 @@ function Home() {
       </div>
       <img className={styles.jovenesImg}  src="https://www.trenquelauquen.gov.ar/wordpress/wp-content/uploads/OFICINA-DE-EMPLEO-1080x675.jpeg" alt="" />
     </div>
+    <br />
+    <div className={styles.quieroContactarme}>
+    <div className={styles.qcizquierda}>
+      <h4>Si te interesa conocer mas acerca de nuestra cooperativa de trabajo o tenes ganas de formar parte de nosotros no dudes en contactarnos </h4>
+     <h2>¡Te esperamos!</h2>
+    </div>
+    <div className={styles.qcderecha}>
+      <div className={styles.circulo}></div>
+      <h2>Quiero contactarme</h2>
+    </div>
+    </div>
 
-    <footer></footer>
+    <br />
+
+    <div>
+      <h1>Conocenos un poquito más</h1>
+    </div>
+    <div className={styles.cards}>
+    <div className={styles.card}>
+      <h2>Misión</h2>
+      <p>Mientras que el objetivo de una declaración de misión es describir el «qué» y «hacia quién» de una empresa, la declaración de visión refiere al «porqué» y al «cómo» y los valores apuntan hacia aquello en lo que cree una organización y bajo qué principios se rige.</p>
+    </div>
+    <div className={styles.card}>
+      <h2>Visión</h2>
+      <p>Mientras que el objetivo de una declaración de misión es describir el «qué» y «hacia quién» de una empresa, la declaración de visión refiere al «porqué» y al «cómo» y los valores apuntan hacia aquello en lo que cree una organización y bajo qué principios se rige.</p>
+    </div>
+    <div className={styles.card}>
+      <h2>Valores</h2>
+      <p>Mientras que el objetivo de una declaración de misión es describir el «qué» y «hacia quién» de una empresa, la declaración de visión refiere al «porqué» y al «cómo» y los valores apuntan hacia aquello en lo que cree una organización y bajo qué principios se rige.</p>
+    </div>
+    </div>
+
+
+    <img  className={styles.imgabajo} src="https://www.grupopas.org/wp-content/uploads/2022/10/cooperativa-de-trabajo-asociado.jpg" alt="" />
+
+    <footer className={styles.footer}>
+    <div className={styles.circulo}></div>
+      <div className={styles.lista}>
+        <h4>Inicio</h4>
+        <h4>Contacto</h4>
+        <h4>Ingresar</h4>
+      </div>
+      <div>
+        <h4>© 2023 Unidad y Progreso. Desarrollado por  Williams M. & Acosta E.</h4>
+      </div>
+    </footer>
     </div>
   )
 }
