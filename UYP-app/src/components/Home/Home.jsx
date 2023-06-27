@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from "./Home.module.css"
+import Login from '../Login/Login';
 function Home() {
   return (
     <div className={styles.contenedor}>
@@ -86,6 +87,8 @@ function Home() {
         <h4>© 2023 Unidad y Progreso. Desarrollado por  Williams M. & Acosta E.</h4>
       </div>
     </footer>
+
+    <Login />
     </div>
   )
 }
