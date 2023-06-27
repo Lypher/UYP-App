@@ -1,6 +1,9 @@
 import React from 'react'
 import styles from "./Home.module.css"
 import Login from '../Login/Login';
+import Error404 from '../Error404/Error404';
+import Footer from '../Footer/Footer';
+import ContactUs from '../ContactUs/ContactUs';
 function Home() {
   return (
     <div className={styles.contenedor}>
@@ -76,19 +79,7 @@ function Home() {
 
     <img  className={styles.imgabajo} src="https://www.grupopas.org/wp-content/uploads/2022/10/cooperativa-de-trabajo-asociado.jpg" alt="" />
 
-    <footer className={styles.footer}>
-    <div className={styles.circulo}></div>
-      <div className={styles.lista}>
-        <h4>Inicio</h4>
-        <h4>Contacto</h4>
-        <h4>Ingresar</h4>
-      </div>
-      <div>
-        <h4>© 2023 Unidad y Progreso. Desarrollado por  Williams M. & Acosta E.</h4>
-      </div>
-    </footer>
-
-    <Login />
+   <Footer/>
     </div>
   )
 }
