@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from "./Login.module.css"
+import Footer from '../Footer/Footer'
 
  function Login() {
   return (
@@ -19,6 +20,7 @@ import styles from "./Login.module.css"
           <img src="https://www.ulibertadores.edu.co/wp-content/uploads/Estas-profesiones-te-permitiran-trabajar-desde-casa.png" alt="" />
         </div>
       </div>
+      <Footer />
     </div>
   )
 }
