@@ -53,6 +53,9 @@ color: cornflowerblue;
 .textodivision1{
     display: grid;
     padding: 10px;
+    background-color: rgba(0, 139, 139, 0.15);
+    border-radius: 50px;
+    margin-right: 20px;
 }
 
 .textodivision2{
@@ -68,4 +71,70 @@ color: cornflowerblue;
 
 .colortexto{
     color: cornflowerblue;
+}
+
+.quieroContactarme{
+display: flex;
+margin: auto ;
+margin-top: 50px;
+width: 100%; 
+justify-content:space-around; 
+align-items: center; 
+padding: 10px;
+}
+
+.qcizquierda{
+    width: 20%;
+}
+.qcderecha{
+display: flex;
+justify-content:space-between; 
+align-items: center; 
+background-color: cadetblue;
+border-radius: 80px 0px 0px 80px;
+}
+.circulo{
+    background-color: white;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    padding: 50px;
+    margin: 10px;
+}
+
+.cards{
+    display: flex;
+margin: auto ;
+margin-top: 50px;
+width: 100%; 
+justify-content:space-around; 
+align-items: center; 
+padding: 10px;
+}
+
+.card{
+    display: grid;
+    padding: 20px;  
+}
+
+.card h2{
+border-bottom: solid black 1px;
+color: cornflowerblue;
+}
+
+.imgabajo{
+    max-width: 100%;
+    max-height: 100%;
+}  
+
+
+.lista{
+    display:flex;
+    justify-content:flex-end;
+    align-items: center;
+    border-bottom: black solid 1px;
+}
+
+.lista h4{
+    margin: 10px;
 }
