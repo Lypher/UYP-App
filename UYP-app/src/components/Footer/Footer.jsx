@@ -5,15 +5,15 @@ import styles from "./Footer.module.css"
   return (
     <div>
          <footer className={styles.footer}>
-    <div className={styles.circulo}></div>
+    <img className={styles.circulo} src="../Img/logoFooter.png" alt="" />
+    <div className={styles.listado}>
       <div className={styles.lista}>
-        <h4>Inicio</h4>
-        <h4>Contacto</h4>
-        <h4>Ingresar</h4>
+        <p>Inicio</p>
+        <p>Contacto</p>
+        <p>Ingresar</p>
       </div>
-      <div>
-        <h4>© 2023 Unidad y Progreso. Desarrollado por  Williams M. & Acosta E.</h4>
-      </div>
+        <p>© 2023 Unidad y Progreso. Desarrollado por  Williams M. & Acosta E.</p>
+        </div>
     </footer>
     </div>
   )
