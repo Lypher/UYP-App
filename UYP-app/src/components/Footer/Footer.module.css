@@ -1,0 +1,29 @@
+.footer{
+    display: flex;
+    margin: auto ;
+    margin-top: 50px;
+    width: 100%; 
+    justify-content:space-between; 
+    align-items: center; 
+    padding: 10px;
+    background-color: rgba(70, 131, 180, 0.322);
+    }
+.circulo{
+background-color: white;
+width: 10px;
+height: 10px;
+border-radius: 100%;
+padding: 50px;
+margin: 10px;
+    }
+
+.lista{
+        display:flex;
+        justify-content:flex-end;
+        align-items: center;
+        border-bottom: black solid 1px;
+    }
+    
+.lista h4{
+        margin: 10px;
+    }
