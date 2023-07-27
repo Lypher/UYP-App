@@ -33,35 +33,39 @@ import Footer from "../../Footer/Footer";
   };
   
   useEffect(() => {
-    console.log(data);
+ 
   }, [data]);
 
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    const game = {
-      ...gameData,
-      rating: parseInt(gameData.rating),
-      genres: gameData.genres.map((genre) => parseInt(genre)),
-    };
-    !game.image.length && delete game.image;
-    dispatch(getAllGames());
-    if (!gameData.name.length) alert("necesitas llenar el formulario");
-    else {
-      const newGame = await axios.post(`${url}/videogames`, game);
-      alert("Tu juego ha sido creado con exito!");
+    const nuevaCard = data
+    let persona = JSON.stringify(nuevaCard);
+    localStorage.setItem("Persona",persona)
+    
+      alert("Afiliado ingresado con exito!");
+      console.log(data)
       window.scrollTo(0, 0);
-      setGameData({
-        name: "",
-        description: "",
-        released: "",
-        image: "",
-        rating: "",
-        platforms: "",
-        genres: [],
+      setData({
+        nombre:"",
+        sexo:"",
+        dni:"",
+        crenatep:"",
+        cuil:"",
+        email:"",
+        lineaPrograma:"",
+        nacimiento:"",
+        nacionalidad:"",
+        provincia:"",
+        municipio:"",
+        localidad:"",
+        calle:"",
+        callenumero:"",
+        codigopostal:"",
+        telefono:"",
       });
-      return newGame;
-    }}
+      return nuevaCard;
+    }
 
 
   return (
