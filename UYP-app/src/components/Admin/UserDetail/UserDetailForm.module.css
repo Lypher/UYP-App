@@ -1,24 +1,89 @@
-.componente{
-    margin-top: 30px;
+.detailCard {
+    display: flex;
+    margin-top: 7em;
+    align-items: center;
+    background-color: rgba(104, 150, 219, 0.29);
+    width: 65%;
+    margin-left: 17.5%;
+    border-radius: 50px;
+    color: #555555;
+}
+.detailDatosPrincipales {
+    display: flex;
+    flex-direction: column;
+}
+.detailCard p {
+    font-weight: 500;
+}
+.detailImg {
+    margin: 2% 4% 2% 2%;
+    cursor: pointer;
 }
 
-.input {
-    display: flex; 
-    align-items: center; 
-    gap: 10px; 
-  }
-  
-  /* Estilo para el título (etiqueta h3) */
-  .input h3 {
-    margin: 0; 
-    font-size: 16px; 
-  }
-  
-  /* Estilo para el input */
-  .input input {
-    padding: 8px 12px; 
-    border: 1px solid #ccc; 
-    border-radius: 4px;
-    font-size: 16px;
-    flex: 1; 
-  }
+.datosContainer {
+    background-color: rgba(104, 150, 219, 0.05);
+    width: 64%;
+    border-radius: 50px;
+    margin-top: -11.1em;
+    margin-left: 13%;
+    padding-bottom: 5%;
+    margin-bottom: 6%;
+}
+.datosDiv {
+    padding-top: 13em;
+    margin-left: 10%;
+    font-weight: 500;
+    width: 73%;
+    
+}
+.datos {
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.datos label {
+    margin-right: 1em;
+    font-size: 1.1em;
+}
+.datos input {
+font-size: 1.2em;
+border: solid .8px #D9D9D9;
+border-radius: 8px;
+padding: 1.5%;
+
+width: 100%;
+flex: 1; 
+}
+.datosCalle {
+    margin-right: 3%;
+}
+
+.nombre {
+    font-size: 2em;
+    height: 4em;
+    width: 85%;
+    padding-left: 5%;
+    border-radius: 20px;
+    border: unset;
+    margin-bottom: 15%;
+    font-weight: 800;
+}
+.detailInput {
+    border-radius: 5px;
+    border: unset;
+    width: 60%;
+    padding: 2%;
+    margin-bottom: 2%;
+    font-weight: 500;
+}
+.ingresarUsuario {
+    width: 100%;
+    background-color: #E1F6A9;
+    font-size: 1.2em;
+    margin-top: 6%;
+}
+.ingresarUsuario:hover {
+    opacity: 70%;
+    border: solid 2px #caf15e;
+}

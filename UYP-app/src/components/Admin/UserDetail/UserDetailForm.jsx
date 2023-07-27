@@ -1,5 +1,6 @@
 import { useState,useEffect } from "react";
 import styles from "./UserDetailForm.module.css"
+import Footer from "../../Footer/Footer";
 
  function UserDetailForm() {
 
@@ -66,39 +67,42 @@ import styles from "./UserDetailForm.module.css"
   return (
     <div className={styles.componente}>
       <form onSubmit={handleSubmit}>
-      <div className={styles.Card}>
+      <div className={styles.detailCard}>
        
-        <img src="" alt="" />
-        <div className={styles.input}><h3>Nombre:</h3> <input type="text" name="nombre" value={data.nombre} onChange={handleInputChange}/></div>
-        <div className={styles.input}><h3>Sexo:</h3>
-        <select name="sexo" value={data.sexo} onChange={handleInputChange}>
-    <option value="Hombre">Hombre</option>
-    <option value="Mujer">Mujer</option>
-  </select>
-        </div>
-        <div className={styles.input}><h3>DNI:</h3> <input type="text" name="dni" value={data.dni} onChange={handleInputChange} /></div>
-        <div className={styles.input}><h3>Codigo renatep:</h3> <input type="text" name="crenatep" value={data.crenatep} onChange={handleInputChange} /></div>
+        <img className={styles.detailImg} src="../Img/imagenNuevoAfiliado.png" alt="" />
+        <div className={styles.detailDatosPrincipales}>
+            
+         <input className={styles.nombre} placeholder="NOMBRE Y APELLIDO" type="text" name="nombre" value={data.nombre} onChange={handleInputChange}/>
+         <input className={styles.detailInput} placeholder="Sexo:" type="text" name="sexo" value={data.sexo} onChange={handleInputChange} />
+         <input className={styles.detailInput} placeholder="DNI:" type="text" name="dni" value={data.dni} onChange={handleInputChange} />
+         <input className={styles.detailInput} placeholder="Codigo Renatep:" type="text" name="crenatep" value={data.crenatep} onChange={handleInputChange} />
       </div>
-
-      <div className={styles.datos}>
-        <div className={styles.input}><h4>Cuil:</h4> <input type="text" name="cuil" value={data.cuil} onChange={handleInputChange} /></div>
-        <div className={styles.input}><h4>Email:</h4> <input type="text" name="email" value={data.email} onChange={handleInputChange} /></div>
-        <div className={styles.input}><h4>Linea de programa:</h4> <input type="text" name="lineaPrograma" value={data.lineaPrograma} onChange={handleInputChange}/></div>
-        <div className={styles.input}><h4>Fecha De nacimiento:</h4> <input type="text" name="nacimiento" value={data.nacimiento} onChange={handleInputChange}/></div>
-        <div className={styles.input}><h4>Nacionalidad:</h4>   <input type="text" name="nacionalidad" value={data.nacionalidad} onChange={handleInputChange}/></div>
-        <div className={styles.input}><h4>Provincia:</h4> <input type="text" name="provincia" value={data.provincia} onChange={handleInputChange}/></div>
-        <div className={styles.input}><h4>Municipio donde Vive:</h4> <input type="text" name="municipio" value={data.municipio} onChange={handleInputChange}/></div>
-        <div className={styles.input}><h4>Localidad:</h4> <input type="text" name="localidad" value={data.localidad} onChange={handleInputChange}/></div>
-        <div className={styles.input}><h4>Calle:</h4> <input type="text" name="calle" value={data.calle} onChange={handleInputChange}/></div>
-        <div className={styles.input}><h4>n:</h4> <input type="text" name="callenumero" value={data.callenumero} onChange={handleInputChange}/></div>
-        <div className={styles.input}><h4>Codigo Postal:</h4> <input type="text" name="codigopostal" value={data.codigopostal} onChange={handleInputChange}/></div>
-        <div className={styles.input}><h4>Telefono/celular:</h4>  <input type="text" name="telefono" value={data.telefono} onChange={handleInputChange}/></div>
-
-        <div className={styles.botones}>
-          <button>ingresar usuario</button>
         </div>
+        
+
+      <div className={styles.datosContainer}>
+        <div className={styles.datosDiv}>
+        <div className={styles.datos}><label>Cuil:</label> <input type="text" name="cuil" value={data.cuil} onChange={handleInputChange} /></div>
+        <div className={styles.datos}><label>Email:</label> <input type="text" name="email" value={data.email} onChange={handleInputChange} /></div>
+        <div className={styles.datos}><label>Linea de programa:</label> <input type="text" name="lineaPrograma" value={data.lineaPrograma} onChange={handleInputChange}/></div>
+        <div className={styles.datos}><label>Fecha De nacimiento:</label> <input type="text" name="nacimiento" value={data.nacimiento} onChange={handleInputChange}/></div>
+        <div className={styles.datos}><label>Nacionalidad:</label>   <input type="text" name="nacionalidad" value={data.nacionalidad} onChange={handleInputChange}/></div>
+        <div className={styles.datos}><label>Provincia:</label> <input type="text" name="provincia" value={data.provincia} onChange={handleInputChange}/></div>
+        <div className={styles.datos}><label>Municipio donde Vive:</label> <input type="text" name="municipio" value={data.municipio} onChange={handleInputChange}/></div>
+        <div className={styles.datos}><label>Localidad:</label> <input type="text" name="localidad" value={data.localidad} onChange={handleInputChange}/></div>
+        <div className={styles.datos}><label>Calle:</label> <input className={styles.datosCalle} type="text" name="calle" value={data.calle} onChange={handleInputChange}/><label>n:</label> <input type="text" name="callenumero" value={data.callenumero} onChange={handleInputChange}/></div>
+        <div className={styles.datos}><label>Codigo Postal:</label> <input type="text" name="codigopostal" value={data.codigopostal} onChange={handleInputChange}/></div>
+        <div className={styles.datos}><label>Telefono/celular:</label>  <input type="text" name="telefono" value={data.telefono} onChange={handleInputChange}/></div>
+       
+          <button className={styles.ingresarUsuario}>Ingresar afiliado</button>
+       
+        </div>
+        
+
+        
       </div>
       </form>
+      <Footer />
     </div>
   )
 }

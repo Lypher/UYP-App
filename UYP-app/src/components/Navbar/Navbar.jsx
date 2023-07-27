@@ -9,9 +9,13 @@ import { NavLink } from 'react-router-dom';
 
   return (
     <div className={styles.navbar}>
-        <NavLink className={styles.logo} to="/home">Logo</NavLink>
+        <NavLink className={styles.logo} to="/home">
+          <img className={styles.logo} src="../Img/logoChico.svg" alt="" />
+        </NavLink>
         
-        <NavLink className={styles.boton} to="/login">Ingresar</NavLink>
+        <NavLink className={styles.boton} to="/login">
+        <img className={styles.user}  src="../Img/ingresar.png" alt="" />
+        </NavLink>
        
     </div>
   )
