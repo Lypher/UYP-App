@@ -1,5 +1,6 @@
 import styles from "./Home.module.css"
 import Footer from '../Footer/Footer';
+
 import { NavLink } from 'react-router-dom';
 
 function Home() {
@@ -78,6 +79,7 @@ function Home() {
     <img  className={styles.imgabajo} src="https://www.grupopas.org/wp-content/uploads/2022/10/cooperativa-de-trabajo-asociado.jpg" alt="" />
 
    <Footer/>
+
     </div>
   )
 }
