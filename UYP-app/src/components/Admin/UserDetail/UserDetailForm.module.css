@@ -1,4 +1,3 @@
-
 .detailCard {
     display: flex;
     margin-top: 7em;
@@ -9,11 +8,16 @@
     border-radius: 50px;
     color: #555555;
 }
+.detailDatosPrincipales {
+    display: flex;
+    flex-direction: column;
+}
 .detailCard p {
     font-weight: 500;
 }
 .detailImg {
     margin: 2% 4% 2% 2%;
+    cursor: pointer;
 }
 
 .datosContainer {
@@ -38,7 +42,7 @@
     flex-direction: row;
     align-items: center;
 }
-.datosLabel {
+.datos label {
     margin-right: 1em;
     font-size: 1.1em;
 }
@@ -54,33 +58,32 @@ flex: 1;
 .datosCalle {
     margin-right: 3%;
 }
-.botones {
-    margin-top: 6%;
-    display: flex;
-    align-items: center;
-}
-.botonesModificar {
-    background-color: #6896DB;
-    color: white;
-    width: 42%;
-    margin-right: 3%;
-    font-size: 1.2em;
-}
-.botonesGuardar {
-    background-color: #E1F6A9;
-    margin-right: 3%;
-    width: 42%;
-    font-size: 1.2em;
-    
-}
 
-.botonesEliminar {
-    background-color: #FF3E3E;
-padding: 0;
-    width: 10%;
+.nombre {
+    font-size: 2em;
+    height: 4em;
+    width: 85%;
+    padding-left: 5%;
+    border-radius: 20px;
+    border: unset;
+    margin-bottom: 15%;
+    font-weight: 800;
 }
-.botonesCruz {
-    margin-top: .6em;
-    margin-bottom: .56em;
-    margin-left: 2%;
+.detailInput {
+    border-radius: 5px;
+    border: unset;
+    width: 60%;
+    padding: 2%;
+    margin-bottom: 2%;
+    font-weight: 500;
+}
+.ingresarUsuario {
+    width: 100%;
+    background-color: #E1F6A9;
+    font-size: 1.2em;
+    margin-top: 6%;
+}
+.ingresarUsuario:hover {
+    opacity: 70%;
+    border: solid 2px #caf15e;
 }
