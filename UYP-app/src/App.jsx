@@ -5,6 +5,8 @@ import Navbar from './components/Navbar/Navbar'
 import Login from './components/Login/Login';
 import UserDetail from './components/Admin/UserDetail/UserDetail'
 import UserDetailForm from './components/Admin/UserDetail/UserDetailForm';
+import UserList from "./components/Admin/UserList/UserList"
+import ContactUs from './components/ContactUs/ContactUs';
 
 function App() {
 
@@ -17,6 +19,8 @@ function App() {
       <Route exact path="/login" element={<Login />} />
       <Route exact path="/detail" element={<UserDetail />} />
       <Route exact path="/userForm" element={<UserDetailForm />} />
+      <Route exact path="/userList" element={<UserList />} />
+      <Route exact path="/contacto" element={<ContactUs />} />
     </Routes>
      
     </>
