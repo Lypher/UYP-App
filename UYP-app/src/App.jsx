@@ -6,10 +6,7 @@ import Login from './components/Login/Login';
 import UserDetail from './components/Admin/UserDetail/UserDetail'
 import UserDetailForm from './components/Admin/UserDetail/UserDetailForm';
 import UserList from "./components/Admin/UserList/UserList"
-<<<<<<< HEAD
-=======
-import ContactUs from './components/ContactUs/ContactUs';
->>>>>>> 76975703bf0de173dfc211030985631959024326
+
 
 function App() {
 
@@ -23,10 +20,6 @@ function App() {
       <Route exact path="/detail" element={<UserDetail />} />
       <Route exact path="/userForm" element={<UserDetailForm />} />
       <Route exact path="/userList" element={<UserList />} />
-<<<<<<< HEAD
-=======
-      <Route exact path="/contacto" element={<ContactUs />} />
->>>>>>> 76975703bf0de173dfc211030985631959024326
     </Routes>
      
     </>

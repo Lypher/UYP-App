@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from "./UserList.module.css"
 import Footer from '../../Footer/Footer';
+import { NavLink } from 'react-router-dom';
 
 function UserList() {
   return (
@@ -12,7 +13,7 @@ function UserList() {
         <img className={styles.icono} src="../Img/buscador.png" alt="" />
         <input placeholder="Nombre y apellido" className={styles.buscador}></input>
         <button className={styles.buscar}>Buscar</button>
-        <button className={styles.ingresar}>Ingresar</button>
+        <NavLink className={styles.ingresar} to= "/userForm">Ingresar</NavLink>
         </div>
       
         
@@ -27,7 +28,7 @@ function UserList() {
           <p className={styles.codRenatep}>Codigo Renatep:</p>
           <p>2222222</p>
           <div className={styles.verMas}>
-          <p >Ver más</p>
+         <NavLink to="/detail"> <p >Ver más</p></NavLink> 
            <img className={styles.verMasIcono} src="../Img/verMas.png" alt="" />
           </div>
            

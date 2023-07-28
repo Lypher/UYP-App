@@ -1,8 +1,12 @@
 import React from 'react'
 import styles from "./Login.module.css"
 import Footer from '../Footer/Footer'
+import { NavLink } from 'react-router-dom'
 
  function Login() {
+   let scroll = () =>{
+    window.scrollTo(0, 0);
+   }
   return (
     
       <div className={styles.login}>
@@ -17,7 +21,10 @@ import Footer from '../Footer/Footer'
           <input type="password"  />
 
           <button className={styles.registrarse}>Registrarte</button>
-          <button className={styles.iniciarSesion}>Iniciar Sesion</button>
+          <NavLink className={styles.iniciarSesion} to="/userList" onClick={scroll}>
+          Iniciar Sesion
+        </NavLink>
+      
         </div>
         <div className={styles.izquierda}>
         <img src="../Img/contacto.png" alt="" />
