@@ -1,9 +1,5 @@
-import React from 'react'
 import styles from "./Home.module.css"
-import Login from '../Login/Login';
-import Error404 from '../Error404/Error404';
 import Footer from '../Footer/Footer';
-import ContactUs from '../ContactUs/ContactUs';
 function Home() {
   return (
     <div className={styles.contenedor}>

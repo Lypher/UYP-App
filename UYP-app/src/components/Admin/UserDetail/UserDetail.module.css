@@ -1,0 +1,86 @@
+
+.detailCard {
+    display: flex;
+    margin-top: 7em;
+    align-items: center;
+    background-color: rgba(104, 150, 219, 0.29);
+    width: 65%;
+    margin-left: 17.5%;
+    border-radius: 50px;
+    color: #555555;
+}
+.detailCard p {
+    font-weight: 500;
+}
+.detailImg {
+    margin: 2% 4% 2% 2%;
+}
+
+.datosContainer {
+    background-color: rgba(104, 150, 219, 0.05);
+    width: 64%;
+    border-radius: 50px;
+    margin-top: -11.1em;
+    margin-left: 13%;
+    padding-bottom: 5%;
+    margin-bottom: 6%;
+}
+.datosDiv {
+    padding-top: 13em;
+    margin-left: 10%;
+    font-weight: 500;
+    width: 73%;
+    
+}
+.datos {
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.datosLabel {
+    margin-right: 1em;
+    font-size: 1.1em;
+}
+.datos input {
+font-size: 1.2em;
+border: solid .8px #D9D9D9;
+border-radius: 8px;
+padding: 1.5%;
+
+width: 100%;
+flex: 1; 
+}
+.datosCalle {
+    margin-right: 3%;
+}
+.botones {
+    margin-top: 6%;
+    display: flex;
+    align-items: center;
+}
+.botonesModificar {
+    background-color: #6896DB;
+    color: white;
+    width: 42%;
+    margin-right: 3%;
+    font-size: 1.2em;
+}
+.botonesGuardar {
+    background-color: #E1F6A9;
+    margin-right: 3%;
+    width: 42%;
+    font-size: 1.2em;
+    
+}
+
+.botonesEliminar {
+    background-color: #FF3E3E;
+padding: 0;
+    width: 10%;
+}
+.botonesCruz {
+    margin-top: .6em;
+    margin-bottom: .56em;
+    margin-left: 2%;
+}
