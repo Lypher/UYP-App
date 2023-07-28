@@ -1,12 +1,11 @@
 import React from 'react'
 import styles from "./ContactUs.module.css"
+import Footer from '../Footer/Footer';
  function ContactUs() {
   return (
-    <div>
+    <div className={styles.contacto}>
       <div className={styles.container}>
-        <div className={styles.izquierda}>
-         
-        </div>
+        <img className={styles.contactoLogo} src="../Img/logo.svg" alt="" />
         <div className={styles.derecha}>
         <h3>Para mas informacion</h3>
           <h1>Contactanos</h1>
@@ -20,6 +19,7 @@ import styles from "./ContactUs.module.css"
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   )
 }
