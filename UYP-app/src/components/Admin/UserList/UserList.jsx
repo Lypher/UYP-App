@@ -1,9 +1,18 @@
-import React from 'react'
 import styles from "./UserList.module.css"
 import Footer from '../../Footer/Footer';
 import { NavLink } from 'react-router-dom';
+import { useEffect, useState } from "react";
+
 
 function UserList() {
+const [list, setList] = useState([]);
+useEffect(()=>{
+  fetch("http://localhost:3001/usuarios")
+  .then(response=>response.json())
+  .then(data=>setList(data))
+},[])
+console.log(list)
+
   return (
     <div>
       <h1 className={styles.titulo}>Administracion</h1>
@@ -16,88 +25,29 @@ function UserList() {
         <NavLink className={styles.ingresar} to= "/userForm">Ingresar</NavLink>
         </div>
       
-        
-      
-      <div className={styles.cardContainer}>
-      <div className={styles.card}>
+    
+      <div className={styles.cardContainer}> 
+          
+            {
+              list .sort((a, b) => a.id - b.id) .map(list =>{
+                return(
+                  
+                  <div key={list.id} className={styles.card}>
           <div className={styles.name}>
-          <p className={styles.namee}>ENZO MARIANO </p>
-          <p className={styles.apellido}>ACOSTA</p>
+          <p className={styles.namee}>{list.name} </p>
+          <p className={styles.apellido}>{list.apellido}</p>
           </div>
-          <p className={styles.dni}>DNI: 36.650.624</p>
+          <p className={styles.dni}>{list.dni}</p>
           <p className={styles.codRenatep}>Codigo Renatep:</p>
-          <p>2222222</p>
+          <p>{list.crenatep}</p>
           <div className={styles.verMas}>
-         <NavLink to="/detail"> <p >Ver más</p></NavLink> 
+         <NavLink to={`/detail/${list.id}`}> <p >Ver más</p></NavLink> 
            <img className={styles.verMasIcono} src="../Img/verMas.png" alt="" />
           </div>
-           
-        </div>
-        <div className={styles.card}>
-          <div className={styles.name}>
-          <p className={styles.namee}>ENZO MARIANO </p>
-          <p className={styles.apellido}>ACOSTA</p>
-          </div>
-          <p className={styles.dni}>DNI: 36.650.624</p>
-          <p className={styles.codRenatep}>Codigo Renatep:</p>
-          <p>2222222</p>
-          <div className={styles.verMas}>
-          <p >Ver más</p>
-           <img className={styles.verMasIcono} src="../Img/verMas.png" alt="" />
-          </div>
-        </div>
-        <div className={styles.card}>
-          <div className={styles.name}>
-          <p className={styles.namee}>ENZO MARIANO </p>
-          <p className={styles.apellido}>ACOSTA</p>
-          </div>
-          <p className={styles.dni}>DNI: 36.650.624</p>
-          <p className={styles.codRenatep}>Codigo Renatep:</p>
-          <p>2222222</p>
-          <div className={styles.verMas}>
-          <p >Ver más</p>
-           <img className={styles.verMasIcono} src="../Img/verMas.png" alt="" />
-          </div>
-        </div>
-        <div className={styles.card}>
-          <div className={styles.name}>
-          <p className={styles.namee}>ENZO MARIANO </p>
-          <p className={styles.apellido}>ACOSTA</p>
-          </div>
-          <p className={styles.dni}>DNI: 36.650.624</p>
-          <p className={styles.codRenatep}>Codigo Renatep:</p>
-          <p>2222222</p>
-          <div className={styles.verMas}>
-          <p >Ver más</p>
-           <img className={styles.verMasIcono} src="../Img/verMas.png" alt="" />
-          </div>
-        </div>
-        <div className={styles.card}>
-          <div className={styles.name}>
-          <p className={styles.namee}>ENZO MARIANO </p>
-          <p className={styles.apellido}>ACOSTA</p>
-          </div>
-          <p className={styles.dni}>DNI: 36.650.624</p>
-          <p className={styles.codRenatep}>Codigo Renatep:</p>
-          <p>2222222</p>
-          <div className={styles.verMas}>
-          <p >Ver más</p>
-           <img className={styles.verMasIcono} src="../Img/verMas.png" alt="" />
-          </div>
-        </div>
-        <div className={styles.card}>
-          <div className={styles.name}>
-          <p className={styles.namee}>ENZO MARIANO </p>
-          <p className={styles.apellido}>ACOSTA</p>
-          </div>
-          <p className={styles.dni}>DNI: 36.650.624</p>
-          <p className={styles.codRenatep}>Codigo Renatep:</p>
-          <p>2222222</p>
-          <div className={styles.verMas}>
-          <p >Ver más</p>
-           <img className={styles.verMasIcono} src="../Img/verMas.png" alt="" />
-          </div>
-        </div>
+                  </div>
+                )
+              })
+            }
       </div>
       <Footer />
     </div>

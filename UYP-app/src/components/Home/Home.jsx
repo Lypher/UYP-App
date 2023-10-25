@@ -16,7 +16,7 @@ function Home() {
       <div className={styles.texto1}> <p className={styles.textoUyP}>Unidad y Progreso</p> ¿Que es?</div>
       <div className={styles.queEsContenedor} >
       <div className={styles.texto}> Unidad y Progreso es una cooperativa de trabajo independiente fundada por Andrés Obregon en el año 2023. Unidad y Progreso es una cooperativa de trabajo independiente fundada por Andrés Obregon en el año 2023. trabajo independiente fundada por Andrés Obregon en el año 2023. Unidad y Progreso es una cooperativa de trabajo independiente fundada por Andrés Obregon en el año 2023. Unidad y Progreso es una cooperativa de trabajo independiente fundada por Andrés Obregon en el año. </div>
-      <img className={styles.arrow} src="../Img/arrow.png" alt="" />
+      <img className={styles.arrow} src="../Img/arrow.png" alt="" onClick={() => window.scrollTo(0, document.documentElement.scrollHeight/3)}/>
       </div>
       </div>
       
