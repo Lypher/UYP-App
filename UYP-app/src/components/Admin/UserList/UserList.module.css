@@ -85,3 +85,17 @@ background-color: transparent;
    height: 2em;
    
 }
+.pagination {
+display: flex;
+justify-content: center;
+font-weight: 600;
+cursor: pointer;
+margin-top: 50px;
+  }
+
+.pagination button{
+    margin: 5px;
+}
+.pagination button:hover{
+    box-shadow: gray 2px 2px;
+}
