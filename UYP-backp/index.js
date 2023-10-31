@@ -5,6 +5,7 @@ const cors = require("cors");
 const { database } = require ("./db");
 const buscarUsuarios = require ("./controllers/buscarUsuarios")
 const modificarUsuario = require("./controllers/modificarUsuario")
+const eliminarUsuario = require("./controllers/eliminarUsuario")
 const buscarUsuarioPorId = require("./controllers/buscarUsuarioPorId")
 const crearAdmin = require("./controllers/crearAdmin")
 const login = require("./controllers/login")
@@ -48,6 +49,8 @@ server.post("/usuarios", async (req,res) =>{
 });
 
 server.put('/usuarios/:id', modificarUsuario);
+
+server.delete('/usuarios/:id', eliminarUsuario);
 
 server.get("/usuarios/:id", async (req, res) => {
     const { id } = req.params;

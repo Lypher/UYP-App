@@ -50,7 +50,7 @@ function UserList() {
         {paginatedList.map(item => (
           <div key={item.id} className={styles.card}>
             <div className={styles.name}>
-              <p className={styles.name}>{item.name}</p>
+              <p className={styles.namee}>{item.name}</p>
               <p className={styles.apellido}>{item.apellido}</p>
             </div>
             <p className={styles.dni}>Dni: {item.dni}</p>
