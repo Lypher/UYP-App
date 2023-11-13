@@ -43,7 +43,7 @@ import axios from "axios";
     event.preventDefault();
   
     try {
-      const response = await axios.post(`http://localhost:3001/usuarios`, data)
+      const response = await axios.post(`https://servidor-uyp.onrender.com/usuarios`, data)
       console.log("respuesta del servidor:", response.data);
       alert("Afiliado ingresado con éxito!");
       console.log(data);

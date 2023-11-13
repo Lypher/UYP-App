@@ -9,7 +9,7 @@ function UserList() {
   const itemsPerPage = 15;
   
   useEffect(() => {
-    fetch("http://localhost:3001/usuarios")
+    fetch("https://servidor-uyp.onrender.com/usuarios")
       .then(response => response.json())
       .then(data => setList(data));
   }, []);

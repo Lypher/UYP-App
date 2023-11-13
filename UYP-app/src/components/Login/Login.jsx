@@ -11,7 +11,7 @@ function Login() {
   const handleIniciarSesion = async () => {
     try {
       // Hacer una solicitud al servidor para obtener datos de usuario
-      const response = await fetch("http://localhost:3001/registro");
+      const response = await fetch("https://servidor-uyp.onrender.com/registro");
       const data = await response.json();
       
       // Comprobar si existe un usuario con el correo ingresado

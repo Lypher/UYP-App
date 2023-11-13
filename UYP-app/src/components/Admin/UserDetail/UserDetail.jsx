@@ -65,7 +65,7 @@ function UserDetail() {
   const enviarForm = async () => {
     try {
       const formDataLlenado = llenarCamposVacios(formData, persona);
-      const response = await axios.put(`http://localhost:3001/usuarios/${id}`, formDataLlenado);
+      const response = await axios.put(`https://servidor-uyp.onrender.com/usuarios/${id}`, formDataLlenado);
       console.log("respuesta del servidor:", response.data);
       alert("Usuario modificado con éxito!");
       setEditMode(!editMode);
@@ -77,7 +77,7 @@ function UserDetail() {
   useEffect(() => {
     async function fetchData() {
       try {
-        const response = await axios(`http://localhost:3001/usuarios/${id}`);
+        const response = await axios(`https://servidor-uyp.onrender.com/usuarios/${id}`);
         const personaSeleccionada = response.data;
         setPersona(personaSeleccionada);
       } catch (error) {
