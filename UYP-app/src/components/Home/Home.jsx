@@ -49,7 +49,7 @@ function Home() {
      <h2 className={styles.teEsperamos}>¡Te esperamos!</h2>
     </div>
     <div className={styles.qcderecha}>
-      <div className={styles.circulo}><img className={styles.circuloCruz} src="../Img/cruzCirculo.png" alt="" /></div>
+      <div className={styles.circulo}></div>
       <div className={styles.contactarme}>
       <p className={styles.quiero} >Quiero </p>
       <p className={styles.quiero} >Contactarme</p>

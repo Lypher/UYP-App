@@ -28,3 +28,27 @@
         font-weight: 500;
         
     }
+
+    @media screen and (max-width: 750px) {
+        .circulo {
+            width: 5em;
+        }
+        .listado {
+            font-size: .9em;
+        }
+    }
+    @media screen and (max-width: 500px) {
+        .circulo {
+            width: 3.8em;
+            margin-left: .8em;
+        }
+        .listado {
+            font-size: .8em;
+        }
+    }
+    @media screen and (max-width: 400px) {
+        
+        .listado {
+            font-size: .7em;
+        }
+    }
