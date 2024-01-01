@@ -8,6 +8,7 @@ const { DB_USER, DB_PASSWORD, DB_HOST, DB_PORT, BDD } = process.env;
 const database = new Sequelize(
   `postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}:${DB_PORT}/${BDD}`,
   {
+    dialect: "postgres",
     dialectOptions: {
       ssl: {
         require: true,
